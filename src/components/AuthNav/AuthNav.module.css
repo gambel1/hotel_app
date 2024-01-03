@@ -1,0 +1,32 @@
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.boxLinkLogo {
+  font-family: var(--montserrat);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+
+  color: var(--color-white);
+}
+
+.boxLinkCurrent {
+  color: var(--color-orange);
+}
+
+/* nav */
+.nav {
+  font-family: var(--montserrat);
+  font-weight: 500;
+
+  color: var(--color-white);
+}
