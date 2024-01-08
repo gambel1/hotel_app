@@ -1,0 +1,36 @@
+.hotelOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotelOptionsList {
+  display: flex;
+  gap: 31px;
+}
+
+.hotelOptionsSelect,
+.hotelOptionsInput,
+.hotelOptionsButton {
+  font-family: var(--montserrat);
+  font-size: 16px;
+
+  border: 2px solid var(--color-orange);
+}
+
+.hotelOptionsSelect {
+  padding: 11px 20px;
+}
+
+.hotelOptionsInput {
+  padding: 12px 20px;
+  width: 220px;
+}
+
+.hotelOptionsButton {
+  padding: 11px 34px;
+  width: 220px;
+
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border: none;
+}

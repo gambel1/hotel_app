@@ -1,13 +1,11 @@
-import css from "./AuthenticationPage.module.css";
-// import RegisterForm from "../../components/RegisterForm/RegisterForm";
 import LoginForm from "../../components/LoginForm/LoginForm";
+import css from "../Register/Register.module.css";
 
-export default function AuthenticationPage() {
+export default function Login() {
   return (
     <section className={css.authentication}>
       <div className="container">
         <div className={css.backdrop}>
-          {/* <RegisterForm /> */}
           <LoginForm />
         </div>
       </div>

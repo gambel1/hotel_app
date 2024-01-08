@@ -1,5 +1,7 @@
 import Layout from "./Layout/Layout";
-import AuthenticationPage from "../pages/AuthenticationPage/AuthenticationPage";
+import Register from "../pages/Register/Register";
+import Login from "../pages/Login/Login";
+import HotelOptions from "./HotelOptions/HotelOptions";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -8,10 +10,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<div>Home Page</div>} />
-          <Route path="/register" element={<AuthenticationPage />} />
-          <Route path="/login" element={<AuthenticationPage />} />
 
-          <Route path="/hotel" element={<div>Hotel Page</div>} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+
+          <Route path="/hotel" element={<HotelOptions />} />
           <Route path="*" element={<div>Home Page</div>} />
         </Route>
       </Routes>
