@@ -16,6 +16,9 @@
   --color-black: #000;
   --color-orange: #ff662d;
   --color-background: #0f1d2d;
+
+  /* times */
+  --timing-function: 250ms;
 }
 
 body {

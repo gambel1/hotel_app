@@ -10,12 +10,15 @@ export default function HotelOptions() {
   };
 
   return (
-      <div className="container">
-    <section className={css.hotelOptions}>
-        <ul className={css.hotelOptionsList}>
+    <>
+      <h1 lang="en" className={css.visuallyHidden}>
+        Hotel
+      </h1>
+      <div className={css.hotelBox}>
+        <ul className={css.hotelBoxList}>
           <li>
             <select
-              className={css.hotelOptionsSelect}
+              className={css.hotelBoxSelect}
               id="dropdown"
               value={selectedValue}
               onChange={handleDropdownChange}
@@ -29,14 +32,14 @@ export default function HotelOptions() {
           </li>
           <li>
             <input
-              className={css.hotelOptionsInput}
+              className={css.hotelBoxInput}
               type="text"
               placeholder="Цена, от"
             />
           </li>
         </ul>
-        <button className={css.hotelOptionsButton}>Подбор жилья</button>
-    </section>
+        <button className={css.hotelBoxButton}>Подбор жилья</button>
       </div>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 import Layout from "./Layout/Layout";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
-import HotelOptions from "./HotelOptions/HotelOptions";
+import Hotel from "../pages/Hotel/Hotel";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
 
-          <Route path="/hotel" element={<HotelOptions />} />
+          <Route path="/hotel" element={<Hotel />} />
           <Route path="*" element={<div>Home Page</div>} />
         </Route>
       </Routes>

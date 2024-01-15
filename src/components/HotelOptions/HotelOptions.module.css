@@ -1,36 +1,80 @@
-.hotelOptions {
-  display: flex;
-  justify-content: space-between;
+/* visually-hidden */
+.visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-.hotelOptionsList {
+
+
+/* hotelBox */
+.hotelBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.hotelBoxList {
   display: flex;
   gap: 31px;
 }
 
-.hotelOptionsSelect,
-.hotelOptionsInput,
-.hotelOptionsButton {
+.hotelBoxSelect,
+.hotelBoxInput,
+.hotelBoxButton {
   font-family: var(--montserrat);
   font-size: 16px;
 
   border: 2px solid var(--color-orange);
 }
 
-.hotelOptionsSelect {
+.hotelBoxSelect {
   padding: 11px 20px;
 }
+.hotelSelect:hover,
+.hotelBoxSelect:focus,
+.hotelBoxSelect:active {
+  outline: var(--color-orange);
 
-.hotelOptionsInput {
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.25s linear;
+}
+
+.hotelBoxInput {
   padding: 12px 20px;
   width: 220px;
 }
+.hotelBoxInput:hover,
+.hotelBoxInput:focus,
+.hotelBoxInput:active {
+  outline: var(--color-orange);
 
-.hotelOptionsButton {
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.25s linear;
+}
+
+.hotelBoxButton {
   padding: 11px 34px;
   width: 220px;
 
   color: var(--color-white);
   background-color: var(--color-orange);
   border: none;
+  cursor: pointer;
 }
+.hotelBoxButton:hover,
+.hotelBoxButton:focus,
+.hotelBoxButton:active {
+  outline: var(--color-orange);
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.25s linear;
+}
+
+
