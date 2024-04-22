@@ -1,8 +1,8 @@
 import css from "./Card.module.css";
-import apartment_1 from "../../images/apartment_1.jpg";
+// import apartment_1 from "../../images/apartment_1.jpg";
 import sprite from "../../images/sprite.svg";
 
-export default function Card({ card }) {
+export default function Card({ card, img }) {
   const numberOfIcons = Math.floor(Math.random() * 5) + 1;
   const numberOfPrice = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
 
@@ -10,7 +10,7 @@ export default function Card({ card }) {
     <li className={css.hotelCardList}>
       <a href="#" className={css.hotelCardLink}>
         <div className={css.hotelCardBackdrop}>
-          <img src={apartment_1} alt="зображення хлопця і дівчат" />
+          <img src={img} alt="зображення хлопця і дівчат" />
           <div className={css.hotelCardBox}>
             <p className={css.hotelCardText}>{card}</p>
             {[...Array(numberOfIcons)].map((_, iconIndex) => (

@@ -55,7 +55,7 @@ code {
 }
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1366px;
+    width: 1200px;
   }
 }
 
